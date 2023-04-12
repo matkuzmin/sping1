@@ -12,30 +12,30 @@ public class СalculatorService {
     public String summ(int num1, int num2) {
 
         int sum = num1 + num2;
-        return String.valueOf(sum);
+        return num1 + "+" + num2 + "=" +  String.valueOf(sum);
     }
 
     public String minus(int num1, int num2) {
 
         int min = num1 - num2;
-        return String.valueOf(min);
+        return num1 + "-" + num2 + "=" + String.valueOf(min);
     }
 
     public String multiply(int num1, int num2) {
 
         int multip = num1 * num2;
-        return String.valueOf(multip);
+        return num1 + "*" + num2 + "=" + String.valueOf(multip);
     }
 
     public String divide(int num1, int num2) {
 
 
-                if (num2 == 0) {
-                    return "На 0 делить нельзя";
-                }
-
-                int divi = num1 / num2;
-                return String.valueOf(divi);
-            }
+        if (num2 == 0) {
+            return "На 0 делить нельзя";
         }
+
+        int divi = num1 / num2;
+        return num1 + "/" + num2 + "=" + String.valueOf(divi);
+    }
+}
 
